@@ -25,3 +25,16 @@ setInterval(function(){
  }, 1000 )
 }    
  newFunc() 
+
+     // var imageone = "https://images.unsplash.com/photo-1612812166620-a072f77ec45b?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8Y2F0JTIwd2FraW5nJTIwdXB8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60";
+     var imagetwo = "https://images.unsplash.com/photo-1614882046230-b939c987797f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=975&q=80";
+
+
+
+     function changeImage() {
+document.getElementById("myimage").src  = imagetwo
+     }
+
+     function changeImage2() {
+          document.getElementById("myimage").src = "https://images.unsplash.com/photo-1612812166620-a072f77ec45b?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8Y2F0JTIwd2FraW5nJTIwdXB8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"     
+     }
