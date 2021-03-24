@@ -20,9 +20,9 @@ function newFunc() {
 
 setInterval(function(){
      var dateWithouthSecond = new Date();
-     document.getElementById("demo").innerHTML= dateWithouthSecond.toLocaleTimeString(navigator.language, {hour: '2-digit', minute:'2-digit'});
+     document.getElementById("demo").innerHTML= dateWithouthSecond.toLocaleTimeString(navigator.language, {hour: '2-digit', minute:'2-digit', second:'2-digit'});
      //do something else
- }, 1000 )
+ }, 10 )
 }    
  newFunc() 
 
