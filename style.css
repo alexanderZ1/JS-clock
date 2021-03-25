@@ -15,3 +15,99 @@
 #footer1 {
   background-color: grey;
 }
+
+.btn {
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Green */
+.success {
+  border-color: #4caf50;
+  color: green;
+}
+
+.success:hover {
+  background-color: #4caf50;
+  color: white;
+}
+
+/* Blue */
+.info {
+  border-color: #2196f3;
+  color: dodgerblue;
+}
+
+.info:hover {
+  background: #2196f3;
+  color: white;
+}
+
+/* Orange */
+.warning {
+  border-color: #ff9800;
+  color: orange;
+}
+
+.warning:hover {
+  background: #ff9800;
+  color: white;
+}
+
+.timeofday {
+  background-color: #eee;
+}
+
+.bigger {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#sounds {
+  text-align: center;
+  padding-top: 20px;
+}
+
+#setButton {
+  float: left;
+  background-color: lightgreen;
+  margin-bottom: 30px;
+  margin-left: 39rem;
+}
+#clearButton {
+  float: right;
+  background-color: red;
+  margin-bottom: 30px;
+  text-align: center;
+  margin-right: 39rem;
+}
+
+h2 {
+  text-align: center;
+}
+
+#alarm-container {
+  text-align: center;
+  font-family: Verdana;
+  font-size: 2rem;
+  padding: 0.7em;
+  color: white;
+}
+
+label {
+  display: inline-block;
+}
+#clock {
+  height: 120px;
+  font-size: 40px;
+  font-family: arial;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}

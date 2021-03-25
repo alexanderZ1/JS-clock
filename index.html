@@ -7,24 +7,26 @@
 
 <link rel="stylesheet" href="style.css"></head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"> -->
-<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"> -->
+<link rel="stylesheet" type="text/css" media="only screen and (max-device-width:480px)" href="small-device.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js">
 <body  style="background:lightgreen">
-<h1 style="text-align: center;">Working Clock</h1>
+<h1 style="text-align: center;">The Cat Clock</h1>
 
 
 <div style="text-align: center;">
-     <button onclick=changeImage()>
+     <button onclick=changeImage() class="btn success">
           time to sleep!
      </button>
-     <button onclick=changeImage2()> time to wake!</button>
+     <button onclick="playAudio()" id="audio" class="btn info">Play sound</button>
+
+     <button onclick=changeImage2() class="btn warning"> time to wake!</button>
 </div>
 
 <div style="text-align: center;">
 
-     <img id='myimage'src="https://images.unsplash.com/photo-1612812166620-a072f77ec45b?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8Y2F0JTIwd2FraW5nJTIwdXB8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"  style="width: 350px;">
+     <img id='myimage'src="https://images.unsplash.com/photo-1612812166620-a072f77ec45b?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8Y2F0JTIwd2FraW5nJTIwdXB8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"  style="width: 350px; height: 500px;">
 
 </div>
 
@@ -38,20 +40,77 @@
 
 
 
- 
-     <div class="bg-light py-4">
-          <div class="container text-center">
+<hr>
+
+
+
+
+
+
+
+
+
+
+        <div id='main-container'>
+          <h1 style="text-align: center;">ALARM</h1>
+
+          <h2 id='clock'></h2>
+     </div>
+
+     <div id='alarm-container'>
+          <h3>Set Alarm Time</h3>
+               <label>
+                    <div>
+                    <select id='alarmhrs' ></select>
+                    </div>
+               </label>
+               <label>
+                    <div>
+                    <select id='alarmmins' ></select>
+                    </div>
+               </label>
+               <label>
+                    <div>
+                    <select id='alarmsecs' ></select>
+                    </div>
+               </label>
+               <label>
+                    <div>
+                         <select id="ampm">
+                              <option value="AM">AM</option>
+                              <option value="PM">PM</option>
+                         </select>
+                    </div>
+               </label>
+               </div>
+     </div>
+
+     <div id='buttonHolder'>
+          <div>
+               <button  id='setButton' onClick='alarmSet()'>Set Alarm</button>
+          </div>
+
+          <div>
+               <button  id='clearButton' onClick='alarmClear()'>Clear Alarm</button>
+          </div>
+     </div>
+
+
+     <!-- <button onclick="PlaySound('melody1')">test 2</button> -->
+     
+
+
+
+
+
+
+
+
+     <div>
+          <div>
             <p class="text-muted mb-0 py-2">© 2021 Zarifis Software solutions All rights reserved.</p>
           </div>
-        </div>
-
-
-
-
-
-     
-
-     
+        </div> 
      <script src="index.js"></script>
 </body>
 </html>
